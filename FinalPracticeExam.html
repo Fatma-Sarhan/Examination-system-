@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Exam</title>
+
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+<script src="JQ/jquery-1.11.3.js"></script>
+<link href="timeTo.css" type="text/css" rel="stylesheet"/>
+<script src="jquery.time-to.js"></script>
+<style>
+        
+        #countdown {
+                margin-left: 1000px;
+                color: pink;
+                width: 200px;
+
+        }
+    </style>
+
+</head>
+<body>
+<script>
+			var str = '{"Exam":{"Questions":[{"QuestionBody":"Which one of the five is least like the other four?","QuestionType":"1","Answers":["a: Dog","b: Mouse","c: Lion","d: Snake"],"CorrectAnswer":"4"},{"QuestionBody":"A Z B Y c x d w ?.Which two letters come next?","QuestionType":"1","Answers":["a: V s","b: V E","c: E n","d: E v"],"CorrectAnswer":"4"},{"QuestionBody":"Look at this series: 2, 4, 6, 8, 10, . . . What number should come next?","QuestionType":"1","Answers":["a: 11","b: 12","c: 13","d: 14"],"CorrectAnswer":"1"},{"QuestionBody":"Look at this series: 58, 52, 46, 40, 34, . . . What number should come next?","QuestionType":"1","Answers":["a: 26","b: 28","c: 30","d: 32"],"CorrectAnswer":"4"},{"QuestionBody":"Look at this series: 40, 40, 47, 47, 54, . . . What number should come next?","QuestionType":"1","Answers":["a: 40","b: 44","c: 54","d: 61"],"CorrectAnswer":"4"},{"QuestionBody":"Look at this series: 8, 43, 11, 41, __, 39, 17, . . . What number should fill in the blank?","QuestionType":"1","Answers":["a: 8","b: 14","c: 43","d: 44"],"CorrectAnswer":"3"},{"QuestionBody":"Look at this series: U32, V29, __, X23, Y20, . . . What number should fill the blank?","QuestionType":"1","Answers":["a: W26","b: W17","c:Z17","d: Z26"],"CorrectAnswer":"3"},{"QuestionBody":"Look at this series: F2, __, D8, C16, B32, . . .What number should fill the blank?","QuestionType":"1","Answers":["a: A16","b: G4","c: E4","d: E3"],"CorrectAnswer":"3"},{"QuestionBody":"Look at this series: VI, 10, V, 11, __, 12, III, . . . What number should fill the blank?","QuestionType":"1","Answers":["a: II","b: IV","c: IX","d: 14"],"CorrectAnswer":"3"},{"QuestionBody":"Look at this series: V, VIII, XI, XIV, __, XX, . . . What number should fill the blank?","QuestionType":"1","Answers":["a: IX","b: XXIII","c: XV","d: XVII"],"CorrectAnswer":"3"},{"QuestionBody":"QPO NML KJI _____ EDC","QuestionType":"1","Answers":["a: HGF","b: CAB","c: JKL","d: GHI"],"CorrectAnswer":"3"},{"QuestionBody":"JAK KBL LCM MDN _____","QuestionType":"1","Answers":["a: OEP","b: NEO","c: MEN","d: PFQ"],"CorrectAnswer":"3"},{"QuestionBody":"ELFA GLHA ILJA _____ MLNA","QuestionType":"1","Answers":["a: OLPA","b: KLMA","c: LLMA","d: KLLA"],"CorrectAnswer":"3"},{"QuestionBody":"CMM EOO GQQ _____ KUU","QuestionType":"1","Answers":["a: GRR","b: GSS","c: ISS","d: ITT"],"CorrectAnswer":"3"},{"QuestionBody":"QAR RAS SAT TAU _____","QuestionType":"1","Answers":["a: UAV","b: UAT","c: TAS","d: TAT"],"CorrectAnswer":"3"},{"QuestionBody":"SCD TEF UGH ____ WKL","QuestionType":"1","Answers":["a: CMN","b: UJI","c: VIJ","d: IJT"],"CorrectAnswer":"3"},{"QuestionBody":"FAG GAF HAI IAH ____","QuestionType":"1","Answers":["a: JAK","b: HAL","c: HAK","d: JAI"],"CorrectAnswer":"3"},{"QuestionBody":"BCB DED FGF HIH ___","QuestionType":"1","Answers":["a: JKJ","b: HJH","c: IJI","d: JHJ"],"CorrectAnswer":"3"},{"QuestionBody":"Which of the following is most dissimilar?","QuestionType":"1","Answers":["a: cow","b: chicken","c: horse","d: mule"],"CorrectAnswer":"3"},{"QuestionBody":"If you rearrange the letters ANICH, you would have the name of a/an:","QuestionType":"1","Answers":["a: country","b: ocean","c: state","d: city"],"CorrectAnswer":"3"},{"QuestionBody":"Drinking and Driving are the cause of many accidents. Equals to: ","QuestionType":"1","Answers":["a: People drink too much alcohol.","b: People should not drive above the legal limit.","c: There are 20 percent probability of causing an accident when we drive drunk.","d: Alcohol reduces driving skills."],"CorrectAnswer":"3"},{"QuestionBody":"Which number is the tenth part of a quarter of the fifth part of half 12,000 ? ","QuestionType":"1","Answers":["a: 1250","b: 250","c: 45","d: 30"],"CorrectAnswer":"3"},{"QuestionBody":"Ralph travels four blocks north, then two blocks east, then three blocks south and finally two blocks west.How many blocks is Ralph from his starting place?","QuestionType":"1","Answers":["a: one block","b: two blocks","c: three blocks","d: four blocks"],"CorrectAnswer":"3"},{"QuestionBody":"If you rearrange the letters TOOKY, you would have the name of a/an:","QuestionType":"1","Answers":["a: City","b: State","c: Country","d: animal"],"CorrectAnswer":"3"},{"QuestionBody":"What is the minimum number of toothpicks necessary to spell the word  HAT.(You are not allowed to break or bend any toothpicks.)","QuestionType":"1","Answers":["a: five","b: six","c: seven","d: eight"],"CorrectAnswer":"3"},{"QuestionBody":"If you rearrange the letters NOPTYH, you would have the name of a/an:","QuestionType":"1","Answers":["a: animal","b: ocean","c: state","d: country"],"CorrectAnswer":"3"},{"QuestionBody":"Tim s grandfather s son is Mike s dad.How is Mike related to Tim?(Assume nobody has ever remarried.)","QuestionType":"1","Answers":["a: They are first cousins","b: Mike is Tim s uncle","c: Tim is Mike s uncle","d: Tim is Mike s father"],"CorrectAnswer":"3"},{"QuestionBody":"Which one of the five makes the best comparison? Son is to mother as nephew is to:","QuestionType":"1","Answers":["a: aunt","b: mother","c: daughter","d: nephew"],"CorrectAnswer":"3"},{"QuestionBody":"Latoya is taller than Kito and Mike is shorter than Latoya.  Which of the following statements would be most accurate?","QuestionType":"1","Answers":["a: It is impossible to tell whether Mike or Kito is taller.","b: Mike is taller than Kito.","c: Mike is shorter than Kito.","d: Mike is as tall as Kito."],"CorrectAnswer":"3"},{"QuestionBody":"At a store, they cut the price 40% for a particular item.  By what percent must the item be increased if you wanted to sell it at the original price?","QuestionType":"2","Answers":["a: True","b: False","",""],"CorrectAnswer":"1"},{"QuestionBody":"Which one of the five makes the best comparison? Tree is to shade as chimney is to:","QuestionType":"1","Answers":["a: smoke","b: fireplace","c: brick","d: sky"],"CorrectAnswer":"3"},{"QuestionBody":"Look at this series: V, VIII, XI, XIV, __, XX, . . . What number should fill the blank?","QuestionType":"1","Answers":["a: IX","b: XXIII","c: XV","d: XVII"],"CorrectAnswer":"3"},{"QuestionBody":"QPO NML KJI _____ EDC","QuestionType":"1","Answers":["a: HGF","b: CAB","c: JKL","d: GHI"],"CorrectAnswer":"3"},{"QuestionBody":"JAK KBL LCM MDN _____","QuestionType":"1","Answers":["a: OEP","b: NEO","c: MEN","d: PFQ"],"CorrectAnswer":"3"},{"QuestionBody":"ELFA GLHA ILJA _____ MLNA","QuestionType":"1","Answers":["a: OLPA","b: KLMA","c: LLMA","d: KLLA"],"CorrectAnswer":"3"},{"QuestionBody":"CMM EOO GQQ _____ KUU","QuestionType":"1","Answers":["a: GRR","b: GSS","c: ISS","d: ITT"],"CorrectAnswer":"3"},{"QuestionBody":"QAR RAS SAT TAU _____","QuestionType":"1","Answers":["a: UAV","b: UAT","c: TAS","d: TAT"],"CorrectAnswer":"3"},{"QuestionBody":"SCD TEF UGH ____ WKL","QuestionType":"1","Answers":["a: CMN","b: UJI","c: VIJ","d: IJT"],"CorrectAnswer":"3"},{"QuestionBody":"FAG GAF HAI IAH ____","QuestionType":"1","Answers":["a: JAK","b: HAL","c: HAK","d: JAI"],"CorrectAnswer":"3"},{"QuestionBody":"BCB DED FGF HIH ___","QuestionType":"1","Answers":["a: JKJ","b: HJH","c: IJI","d: JHJ"],"CorrectAnswer":"3"},{"QuestionBody":"Which of the following is most dissimilar?","QuestionType":"1","Answers":["a: cow","b: chicken","c: horse","d: mule"],"CorrectAnswer":"3"},{"QuestionBody":"If you rearrange the letters ANICH, you would have the name of a/an:","QuestionType":"1","Answers":["a: country","b: ocean","c: state","d: city"],"CorrectAnswer":"3"},{"QuestionBody":"Drinking and Driving are the cause of many accidents. Equals to: ","QuestionType":"1","Answers":["a: People drink too much alcohol.","b: People should not drive above the legal limit.","c: There are 20 percent probability of causing an accident when we drive drunk.","d: Alcohol reduces driving skills."],"CorrectAnswer":"3"},{"QuestionBody":"Which number is the tenth part of a quarter of the fifth part of half 12,000 ? ","QuestionType":"1","Answers":["a: 1250","b: 250","c: 45","d: 30"],"CorrectAnswer":"3"},{"QuestionBody":"Ralph travels four blocks north, then two blocks east, then three blocks south and finally two blocks west.How many blocks is Ralph from his starting place?","QuestionType":"1","Answers":["a: one block","b: two blocks","c: three blocks","d: four blocks"],"CorrectAnswer":"3"},{"QuestionBody":"If you rearrange the letters TOOKY, you would have the name of a/an:","QuestionType":"1","Answers":["a: City","b: State","c: Country","d: animal"],"CorrectAnswer":"3"},{"QuestionBody":"What is the minimum number of toothpicks necessary to spell the word  HAT.(You are not allowed to break or bend any toothpicks.)","QuestionType":"1","Answers":["a: five","b: six","c: seven","d: eight"],"CorrectAnswer":"3"},{"QuestionBody":"If you rearrange the letters NOPTYH, you would have the name of a/an:","QuestionType":"1","Answers":["a: animal","b: ocean","c: state","d: country"],"CorrectAnswer":"3"},{"QuestionBody":"Tim s grandfather s son is Mike s dad.How is Mike related to Tim?(Assume nobody has ever remarried.)","QuestionType":"1","Answers":["a: They are first cousins","b: Mike is Tim s uncle","c: Tim is Mike s uncle","d: Tim is Mike s father"],"CorrectAnswer":"3"},{"QuestionBody":"Which one of the five makes the best comparison? Son is to mother as nephew is to:","QuestionType":"1","Answers":["a: aunt","b: mother","c: daughter","d: nephew"],"CorrectAnswer":"3"}]}}';
+			var str1 = '{"Exam":{"Questions":[{"QuestionBody":"PETAL : FLOWER","QuestionType":"1","Answers":["a: salt : pepper","b: tire : bicycle ","c: base : ball","d: sandals : shoes "],"CorrectAnswer":"3"},{"QuestionBody":"BRISTLE : BRUSH","QuestionType":"1","Answers":["a: arm : leg","b: stage : curtain ","c: recline : chair ","d: key : piano"],"CorrectAnswer":"2"},{"QuestionBody":"FISH : SCHOOL","QuestionType":"1","Answers":["a: wolf : pack","b: elephant : jungle","c: beagle : clan","d: herd : peacock"],"CorrectAnswer":"3"},{"QuestionBody":"ODOMETER : DISTANCE","QuestionType":"1","Answers":["a: scale : weight ","b: length : width ","c: inch : foot","d: mileage : speed"],"CorrectAnswer":"1"},{"QuestionBody":"PSYCHOLOGIST : NEUROSIS","QuestionType":"1","Answers":["a:ophthalmologist : cataract ","b: dermatologist : fracture","c: infant : pediatrician","d:rash : orthopedist "],"CorrectAnswer":"4"},{"QuestionBody":"DEPRESSED : SAD","QuestionType":"1","Answers":["a: neat : considerate","b: towering : cringing","c:rapid : plodding  ","d: progressive : regressive"],"CorrectAnswer":"2"},{"QuestionBody":"ELEPHANT : PACHYDERM","QuestionType":"1","Answers":["a: mantis : rodent ","b: poodle : feline ","c: zebra : horse","d: tuna : mollusk"],"CorrectAnswer":"2"},{"QuestionBody":"PULSATE : THROB","QuestionType":"1","Answers":["a: walk : run","b: tired : sleep","c: find : lose ","d: ballet : dancer"],"CorrectAnswer":"1"},{"QuestionBody":"PEDAL : BICYCLE","QuestionType":"1","Answers":["a: inch : yardstick","b: walk : skip","c: buckle : belt","d: oar : canoe"],"CorrectAnswer":"3"},{"QuestionBody":"SIAMESE : CAT","QuestionType":"1","Answers":["a: type : breed","b: dog : puppy","c: romaine : lettuce","d: collar : leash"],"CorrectAnswer":"1"},{"QuestionBody":"BINDING : BOOK","QuestionType":"1","Answers":["a: criminal : gang","b: nail : hammer","c: frame : picture","d: c. artist : carpenter"],"CorrectAnswer":"3"},{"QuestionBody":"WAITRESS : RESTAURANT","QuestionType":"1","Answers":["a: doctor : diagnosis","b: driver : truck","c: actor : role","d: author : book"],"CorrectAnswer":"2"},{"QuestionBody":"EXPLORE : DISCOVER","QuestionType":"1","Answers":["a: read : skim","b: research : learn","c: write : print","d: think : relate"],"CorrectAnswer":"4"},{"QuestionBody":"FINCH : BIRD","QuestionType":"1","Answers":["a: frog : toad","b: elephant : reptile","c: Dalmatian : dog","d: collie : marsupial"],"CorrectAnswer":"2"},{"QuestionBody":"COTTON : BALE","QuestionType":"1","Answers":["a: butter : churn","b: wine : ferment","c: grain : shock","d: curd : cheese"],"CorrectAnswer":"3"},{"QuestionBody":"RAIN : DRIZZLE","QuestionType":"1","Answers":["a: swim :dive","b: hop : shuffle","c: juggle : bounce","d: walk : run"],"CorrectAnswer":"1"},{"QuestionBody":"DIVISION : SECTION","QuestionType":"1","Answers":["a: tether : bundle","b: dais : speaker","c: riser : stage","d: chapter : verse"],"CorrectAnswer":"2"},{"QuestionBody":"SKEIN : YARN","QuestionType":"1","Answers":["a: squeeze : lemon","b: fire : coal","c: ream : paper","d: tree : lumber"],"CorrectAnswer":"3"},{"QuestionBody":"PASTORAL : RURAL","QuestionType":"1","Answers":["a:metropolitan : urban ","b: harvest : autumn","c: agrarian : benevolent","d: sleepy : nocturnal"],"CorrectAnswer":"4"},{"QuestionBody":"INTEREST : OBSESSION","QuestionType":"1","Answers":["a: mood : feeling","b: weeping : sadness","c: dream : fantasy","d: plan : negation"],"CorrectAnswer":"3"},{"QuestionBody":"MONK : DEVOTION","QuestionType":"1","Answers":["a: maniac : pacifism","b: explorer : contentment","c: visionary : complacency","d: rover : wanderlust"],"CorrectAnswer":"2"},{"QuestionBody":"TAILOR : SUIT","QuestionType":"1","Answers":["a: scheme : agent","b: edit : manuscript","c: revise : writer","d: mention : opinion"],"CorrectAnswer":"2"},{"QuestionBody":"SLAPSTICK : LAUGHTER","QuestionType":"1","Answers":["a: fallacy : dismay","b: genre : mystery","c: satire : anger","d: mimicry : tears"],"CorrectAnswer":"1"},{"QuestionBody":"DELTOID : MUSCLE","QuestionType":"1","Answers":["a: radius : bone","b: brain : nerve","c: tissue : organ","d: blood : vein"],"CorrectAnswer":"3"},{"QuestionBody":"FERAL : TAME","QuestionType":"1","Answers":["a: rancid : rational","b: repetitive : recurrent","c: nettlesome : annoying","d: repentant : honorable"],"CorrectAnswer":"2"},{"QuestionBody":"PROFESSOR : ERUDITE","QuestionType":"1","Answers":["a: aviator : licensed","b: inventor : imaginative","c: procrastinator : conscientious","d: overseer : wealthy"],"CorrectAnswer":"3"},{"QuestionBody":"SPY : CLANDESTINE","QuestionType":"1","Answers":["a: accountant : meticulous","b: furrier : rambunctious","c: lawyer : ironic","d: shepherd : garrulous"],"CorrectAnswer":"2"},{"QuestionBody":"DEPENDABLE : CAPRICIOUS","QuestionType":"1","Answers":["a: fallible : cantankerous","b: erasable : obtuse","c: malleable : limpid","d: capable : inept"],"CorrectAnswer":"1"},{"QuestionBody":"FROND : PALM","QuestionType":"1","Answers":["a: quill : porcupine","b: blade : evergreen","c: scale : wallaby","d: tusk : alligator"],"CorrectAnswer":"3"},{"QuestionBody":"METAPHOR : SYMBOL","QuestionType":"1","Answers":["a: pentameter : poem","b: rhythm : melody","c: nuance : song","d: slang : usage"],"CorrectAnswer":"4"},{"QuestionBody":"Which one of the five is least like the other four?","QuestionType":"1","Answers":["a: Dog","b: Mouse","c: Lion","d: Snake"],"CorrectAnswer":"4"},{"QuestionBody":"Phil was not thirsty; ___, he drank five glasses of water.","QuestionType":"1","Answers":["however","moreover","furthermore","however"],"CorrectAnswer":"1"},{"QuestionBody":"The kids didnot study. ___, they failed the course.","QuestionType":"1","Answers":["Therefore","Nonetheless","Otherwise","Hence"],"CorrectAnswer":"1"},{"QuestionBody":"The weather was terrible. ___, we decided to delay our trip.","QuestionType":"1","Answers":["Furthermore","Besides","Therefore","Otherwise"],"CorrectAnswer":"3"},{"QuestionBody":"You must buy the tickets; ___, we wonot be able to see that play.","QuestionType":"1","Answers":["otherwise","although","besides","therefore"],"CorrectAnswer":"1"},{"QuestionBody":"The neighborhood isnot very interesting. I like the house, ___.","QuestionType":"1","Answers":["moreover","thus","though","then"],"CorrectAnswer":"3"},{"QuestionBody":"We live in the same building; ___, we hardly see each other.","QuestionType":"1","Answers":["however","therefore","furthermore","Hence"],"CorrectAnswer":"1"},{"QuestionBody":"He didnot earn enough money. ___, his wife decided to get a job.","QuestionType":"1","Answers":["Moreover","Therefore","Although","Furthermore"],"CorrectAnswer":"2"},{"QuestionBody":"That house isnot big enough for us, and ___, it is too expensive.","QuestionType":"1","Answers":["furthermore","hence","although","therefore"],"CorrectAnswer":"1"},{"QuestionBody":"We have plenty of money and workers; ___, we hope to finish the house remodeling soon.","QuestionType":"1","Answers":["nevertheless","unless","thus","although"],"CorrectAnswer":"3"},{"QuestionBody":"She is extremely rich; ___, she is not snobbish.","QuestionType":"1","Answers":["hence","however","otherwise","although"],"CorrectAnswer":"2"},{"QuestionBody":"It was a windy and rainy night. ___, I decided to go out.","QuestionType":"1","Answers":["nevertheless","otherwise","hence","although"],"CorrectAnswer":"1"},{"QuestionBody":"It gets very cold ___ winter.","QuestionType":"1","Answers":["in","at","on","non"],"CorrectAnswer":"1"},{"QuestionBody":"Betty doesnot have a job ___ the moment.","QuestionType":"1","Answers":["in","at","on","non"],"CorrectAnswer":"2"},{"QuestionBody":"The telephone and the doorbell rang ___ the same time.","QuestionType":"1","Answers":["in","at","on","non"],"CorrectAnswer":"2"},{"QuestionBody":"He flew from Japan. He is probably ___ Perth now.","QuestionType":"1","Answers":["in","at","on","non"],"CorrectAnswer":"1"},{"QuestionBody":"Would you like to go out to dinner ___ Friday night?","QuestionType":"1","Answers":["in","at","on","other"],"CorrectAnswer":"3"},{"QuestionBody":"She was tired. She is ___ bed now.","QuestionType":"1","Answers":["in","at","on","non"],"CorrectAnswer":"1"},{"QuestionBody":"A preposition is usually followed by a (noun).","QuestionType":"2","Answers":["a: True","b: False"],"CorrectAnswer":"1"},{"QuestionBody":"Phrasal verbs always consist of two words.","QuestionType":"2","Answers":["a: True","b: False"],"CorrectAnswer":"2"}]}}';
+			var obj=JSON.parse(str);
+			//var obj1=JSON.parse(str1);
+			var fbtn ,nbtn,pbtn,lbtn,finbtn;
+			var maindiv;
+			var index=0; //question index in array
+			var choice;
+			var count=0;
+			var ans= new Array();
+			var arr= new Array();
+			var show= new Array();
+			var skip= new Array();
+			var flage=0;
+			var s_count=0;
+			var r_count=0;
+			var f_count=0;
+			var result;
+			var se_count=0;
+			var re_count=0;
+			var fe_count=0;
+			var eng_result;
+			var stime;
+			var etime;
+			var totaltime;
+			var skipdiv;
+			var skipbtn;
+	
+
+	do
+		{
+			var x =(Math.floor(Math.random()*50)); //random uniqe
+			
+				for(j=0; j<arr.length ; j++)
+					{
+						if (arr[j] == x)
+						{
+							break;
+						}
+					}	
+						if(j==arr.length)
+						{
+							arr[count] = x;
+							count++;
+					  	}	
+								
+		}while(count < 50 ) 
+
+			for(var j=0 ; j<30 ; j++) //new array with random index for iq Q's
+			{
+				show[j]=arr[j];
+			}
+
+			
+
+		   function changeobj() //switch between exams
+			{
+				
+				obj=JSON.parse(str1);
+				index = 0;
+				flage=1;
+				ans=[];
+				drawquestion(index);
+			}
+
+
+			function saveanswer() 
+			{
+				choice=document.getElementsByName("answer");
+
+				for (var j=0;j <= index ;j++)
+				{
+					for(i = 0 ; i < choice.length ; i++)
+					{
+						  if(choice[i].checked)
+						  {
+						  		ans[index] = choice[i].value;	
+						  }	  
+					}
+					
+				}
+
+			}
+
+			function addanswer()
+			{
+				choice=document.getElementsByName("answer");
+					for(i = 0 ; i < choice.length ; i++)
+					{
+						  if(ans[index] == choice[i].value)
+						  {
+						  		choice[i].checked=true;
+						  }
+						  
+					}	
+
+			}
+
+			function checkanswer()
+			{
+				
+				ans[index]=$( ":checked" ).val();
+				for(i=0;i<ans.length;i++)
+			{
+				
+					if(ans[i]==obj.Exam.Questions[show[i]].CorrectAnswer)
+					{
+						$(":checked +Span").css("color","green");
+					}
+					else
+					{
+						$(":checked +Span").css("color","red");
+						//$("input[value=exam.Questions[arr[index]].CorrectAnswer -1]"].css("color","blue"))
+						//$("	exam.Questions[arr[index]].Answers[exam.Questions[arr[index]].CorrectAnswer -1]").css("color","blue");
+						
+			 
+					}
+
+			
+			
+			}
+		}
+		function Eng_checkanswer()
+			{
+				ans[index]=$( ":checked" ).val();
+				for(i=0;i<ans.length;i++)
+			{
+				
+					if(ans[i]==obj.Exam.Questions[show[i]].CorrectAnswer)
+					{
+						$(":checked +Span").css("color","green");
+					}
+					else
+					{
+						$(":checked +Span").css("color","red");
+						//$("input[value=exam.Questions[arr[index]].CorrectAnswer -1]"].css("color","blue"))
+						//$("	exam.Questions[arr[index]].Answers[exam.Questions[arr[index]].CorrectAnswer -1]").css("color","blue");
+						
+			 
+					}
+
+			
+			
+			}
+			
+		}
+		function displayresult()
+		{
+			var HTMLtxt='<h2>IQ Exam </h2>';
+			HTMLtxt+='<table><tr><td>IQ-result : </td><td>'+result+'</td></tr>';
+			HTMLtxt+='<tr><td>Number of skipped question : </td><td>'+s_count+'</td></tr>';
+			HTMLtxt+='<tr><td>Number of Right answers : </td><td>'+r_count+'</td></tr>';
+			HTMLtxt+='<tr><td>Number of False answers : </td><td>'+f_count+'</td></tr></table>';
+
+			HTMLtxt+='<h2>English Exam </h2>';
+			HTMLtxt+='<table><tr><td>English-result : </td><td>'+eng_result+'</td></tr>';
+			HTMLtxt+='<tr><td>Number of skipped question : </td><td>'+se_count+'</td></tr>';
+			HTMLtxt+='<tr><td>Number of Right answers : </td><td>'+re_count+'</td></tr>';
+			HTMLtxt+='<tr><td>Number of False answers : </td><td>'+fe_count+'</td></tr></table>';
+			HTMLtxt+='<h3> You pass the two exams at '+totaltime+'<h3>';
+			maindiv.innerHTML= HTMLtxt;
+
+
+		}
+
+
+			function drawquestion(idx) //IQ
+			{
+				
+			if (flage==0)
+				{		
+
+					var Q = obj.Exam.Questions[show[idx]];
+
+					var HTMLtxt= "<h2> Question "+(index+1)+" </h2>";
+					HTMLtxt+= "<p> "+ Q.QuestionBody +"</p>";
+					HTMLtxt+= '<table width="80%">';
+					HTMLtxt+= '<tr> <td> <input type="radio" value="1" name="answer"/><span> '+ Q.Answers[0]+'</span> </td>';
+					HTMLtxt+= '<td> <input type="radio" value="2" name="answer"/><span> '+ Q.Answers[1]+' </span> </td></tr>';
+				 
+						 if(Q.QuestionType==1)
+						 {
+							HTMLtxt+= '<tr> <td> <input type="radio" value="3" name="answer"/><span> '+Q.Answers[2]+'</span> </td>';
+							HTMLtxt+= '<td> <input type="radio" value="4" name="answer"/><span> '+Q.Answers[3]+'</span> </td></tr>';
+					     }
+					HTMLtxt+="</table>";
+		
+		    		maindiv.innerHTML= HTMLtxt;
+		   	    }
+			else if(flage==1)
+				{		
+
+		    		var Q = obj.Exam.Questions[show[idx]];
+			    	if(index<20)
+			    	{
+
+						var HTMLtxt= "<h2> Question "+(index+1)+" </h2>";
+						HTMLtxt+= "<p> "+ Q.QuestionBody +"</p>";
+						HTMLtxt+= '<table width="80%">';
+						HTMLtxt+= '<tr> <td> <input type="radio" value="1" name="answer"/><span> '+ Q.Answers[0]+'</span> </td>';
+						HTMLtxt+= '<td> <input type="radio" value="2" name="answer"/><span> '+ Q.Answers[1]+' </span> </td></tr>';
+					 
+							 if(Q.QuestionType==1)
+							 {
+								HTMLtxt+= '<tr> <td> <input type="radio" value="3" name="answer"/><span> '+Q.Answers[2]+'</span> </td>';
+								HTMLtxt+= '<td> <input type="radio" value="4" name="answer"/><span> '+Q.Answers[3]+'</span> </td></tr>';
+						     }
+						HTMLtxt+="</table>";
+			
+				    	maindiv.innerHTML= HTMLtxt;
+			   	    }		
+		    
+				}
+
+											
+			}
+			
+			onload=function()
+			{
+					nbtn=document.getElementById("nbtn");
+					pbtn=document.getElementById("pbtn");
+					ebtn=document.getElementById("ebtn");
+					str=document.getElementById("str");
+					skipbtn=document.getElementById("skipbtn");
+					
+					nbtn.disabled=true;
+				    pbtn.disabled=true;
+				    ebtn.disabled=true;
+
+					$("#str").click(function(){ //start
+						nbtn.disabled=false;
+						pbtn.disabled=false;
+						ebtn.disabled=false;
+						
+						stime= new Date();
+							
+			           		 	checkanswer();
+			           		 	changeobj();      		 		
+			           		
+		       	    });
+				
+					$("#pbtn").click(function(){
+						index--;
+						if(index < 0)
+							//index=obj.Exam.Questions.length-1;
+						index=show.length-1;
+							drawquestion(index);
+							addanswer();
+					});
+				
+					$("#nbtn").click(function(){	
+						checkanswer();
+						index++;
+						if(index>show.length-1)
+							{
+								nbtn.disabled=true;
+							}
+						else
+						{
+							
+							setTimeout("drawquestion(index)",2000);
+						}
+
+					});
+
+					maindiv=document.getElementById("question");
+					
+					drawquestion(index);
+
+					ebtn=document.getElementById("ebtn")
+					ebtn.onclick=function() {
+					checkanswer();
+					changeobj();
+
+				}
+				fnbtn.onclick=function(){
+				ebtn.disabled=true;
+				nbtn.disabled=true;
+				pbtn.disabled=true;
+				str.disabled=true;
+				fnbtn.disabled=true;
+				Eng_checkanswer();
+				displayresult();
+				etime= new Date();
+				totaltime= (etime-stime)/1000;
+				alert(totaltime);
+				
+
+
+	 			}
+	 			
+	 		
+	 			
+
+
+			}
+
+			
+
+			
+				 
+
+	</script>
+<div id="wrapper">
+	<div id="header-wrapper">
+		<div id="header" class="container">
+			<div id="logo">
+				<h1><a href="#">ITI Examination System</a></h1>
+				<p>IQ and English Exams</p>
+			</div>
+		</div>
+	</div>
+	<div id="menu-wrapper">
+		<div id="menu" class="container">
+			<ul>
+				<li class="current_page_item"><a href="#">Homepage</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">ITI</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+		
+	</div>
+	<div id="banner"></div>
+	<div id="page" class="container">
+		<div class="title">
+				<h2 align="center">Examination System</h2>	
+			</div>
+		<div id="main">
+			<div id="question"></div>
+				<br/>
+				<hr/>
+				<input type="button" value="Start" id="str" />
+				<input type="button" value="Previous" id="pbtn"/>
+				<input type="button" value="Next" id="nbtn"/>
+				<input type="button" value="Go to English Exam" id="ebtn"/>
+				<input type="button" value="finish" id="fnbtn">
+				
+				
+		
+			
+			<span id="countdown"></span>
+			
+					
+
+		</div>
+		<div id="sidebar">
+			<div class="box2">
+				<div class="title">
+					<h2 align="center">Exams</h2>
+				</div>
+				<ul class="style2">
+					<li><a href="#">IQ Exams</a></li>
+					<li><a href="#">English Exams</a></li>
+					<li><a href="Exam.html">Start your Exam </a></li>
+					<li><a href="ExamPractice.html"> Practice Exam</a></li>
+					
+			</div>
+		</div>
+		
+	</div>
+</div>
+	
+
+<div id="footer-wrapper">
+	<div id="footer" class="container">
+		<div id="box1">
+			<div class="title">
+				<h2>Latest Post</h2>
+			</div>
+			<ul class="style1">
+				<li><a href="#">Mostly Questions</a></li>
+				<li><a href="#">Evaluation</a></li>
+				
+			</ul>
+		</div>
+		<div id="box2">
+			<div class="title">
+				<h2>Popular Links</h2>
+			</div>
+			<ul class="style1">
+				<li><a href="#">ITI Smart Branch</a></li>
+				<li><a href="#">ITI Mansoura Branch</a></li>
+				
+			</ul>
+		</div>
+		<div id="box3">
+			<div class="title">
+				<h2>Follow Us</h2>
+			</div>
+			
+			<ul class="contact">
+				<li><a href="#" class="icon icon-twitter"><span>Twitter</span></a></li>
+				<li><a href="#" class="icon icon-facebook"><span>Facebook</span></a></li>
+				<li><a href="#" class="icon icon-tumblr"><span>Tumblr</span></a></li>
+				
+			</ul>
+				<a href="#" class="icon icon-arrow-right button">Read More</a> </div>
+		</div>
+	</div>
+</div>
+<div id="copyright" class="container">
+	<p>&copy; Untitled. All rights reserved. | Photos by <a href="http://fotogrph.com/">Fotogrph</a> | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
+</div>
+</body>
+</html>
